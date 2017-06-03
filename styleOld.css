@@ -1,0 +1,337 @@
+/*
+Theme Name: LeRo
+Description: LeRo template
+Author: Olefirenko Oleg
+Template: themify-ultra
+*/
+
+/**
+* Main styles
+*/
+h1, h2, h3, h4, h5, h6 { 
+
+  color: #222; 
+}
+
+h3 {
+  font-size: 1.6em;	
+  font-weight: bold;
+}
+
+
+#main-nav .themify-logo-menu-item a { 
+  text-transform: none; 
+  font-size: 1em;
+}
+
+#main-nav .themify-logo-menu-item {
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+#main-nav .themify-logo-menu-item a:hover { color: inherit; }
+
+#main-nav a {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+#main-nav .current_page_item a { cursor: default; }
+#main-nav .menu-item { margin-right: 3%; }
+#main-nav .menu-item:last-child,
+#main-nav .menu-item:nth-child(3) { margin-right: 0; }
+
+.main-hero h4 {
+  margin-bottom: 0.9em;
+
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+
+.main-hero h1 {
+  margin-bottom: 0.1em;
+
+  font-size: 5em;
+  text-transform: none;
+}
+
+#body h4 {
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #777;
+}
+
+/**
+* Про нас
+*/
+#body .hero-contacts {
+z-index: 1;
+
+  width: 60%;
+  margin: 0 auto; 
+  margin-top: -80px;
+  padding: 30px;
+  padding-bottom: 50px;
+
+  box-shadow: 0px 10px 80px rgba(0,0,0,.1);
+}
+
+#body .hero-contacts--mobile {
+  width: inherit;
+  margin: 0;
+}
+
+.about-us {}
+
+img.wp-image-95 { border: 15px solid #fff; }
+
+img.wp-image-98 { 
+  position: absolute;
+  top: -100px;
+  left: -30px;
+}
+
+/**
+* Галерея на главной
+*/
+.main-gallery {
+  margin-top: -310px;
+  overflow: visible;
+}
+
+.main-gallery .caroufredsel_wrapper { box-shadow: 0 40px 100px rgba(0,0,0, .2); }
+
+.main-gallery .slide-image {
+  margin-bottom: 0;
+  border: 15px solid #fff;
+}
+
+.main-gallery .carousel-nav-wrap {
+  position: relative;
+  top: -80px;
+}
+
+/**
+* Наші номери
+*/
+.our-rooms a.button {
+  font-weight: 700;
+  color: #fff;
+  background-color: #111;
+}
+
+.our-rooms a.button:hover {
+  color: #222;
+  background-color: #fff;
+  border-color: #000;
+}
+
+.our-rooms strong { font-size: 1.1em; }
+
+.our-rooms__last {
+  z-index: 1;
+  box-shadow: 0 40px 100px rgba(0,0,0, .1);
+}
+
+/** 
+* Слайдер наши комнаты
+*/
+.switcher-block {
+  height: 340px;
+  margin-top: 150px;
+
+  overflow-y: auto;
+}
+
+.our-rooms__gallery {
+  z-index: 1;
+  box-shadow: 0 40px 100px rgba(0,0,0, .1);
+}
+
+.our-rooms__gallery .col4-2.last { overflow: hidden; }
+#body .our-rooms__gallery .gallery,
+.our-rooms__gallery .module-gallery .gallery-showcase-image { margin-bottom: 0; }
+.our-rooms__switcher [name="gallery"] { display: none; }
+
+.our-rooms__switcher .module-gallery { /* Прячем все галереи */
+  display: none;
+  opacity: 0;
+
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+} 
+
+[id*="plain-text-400-0-0-"] {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+[name="gallery"]:nth-of-type(1):checked ~ .themify_builder_content-400 [id*="plain-text-400-0-0-"]:nth-of-type(1),
+[name="gallery"]:nth-of-type(2):checked ~ .themify_builder_content-400 [id*="plain-text-400-0-0-"]:nth-of-type(2),
+[name="gallery"]:nth-of-type(3):checked ~ .themify_builder_content-400 [id*="plain-text-400-0-0-"]:nth-of-type(3),
+[name="gallery"]:nth-of-type(4):checked ~ .themify_builder_content-400 [id*="plain-text-400-0-0-"]:nth-of-type(4),
+[name="gallery"]:nth-of-type(5):checked ~ .themify_builder_content-400 [id*="plain-text-400-0-0-"]:nth-of-type(5) { background-color: #eee; } /* Если нажата кнопка с номером Х, то применить к ней стиль */
+
+[name="gallery"]:nth-of-type(1):checked ~ .themify_builder_content-400 .module-gallery:nth-of-type(1),
+[name="gallery"]:nth-of-type(2):checked ~ .themify_builder_content-400 .module-gallery:nth-of-type(2),
+[name="gallery"]:nth-of-type(3):checked ~ .themify_builder_content-400 .module-gallery:nth-of-type(3),
+[name="gallery"]:nth-of-type(4):checked ~ .themify_builder_content-400 .module-gallery:nth-of-type(4),
+[name="gallery"]:nth-of-type(5):checked ~ .themify_builder_content-400 .module-gallery:nth-of-type(5) { display: block; } /* Если нажата клавиша Н, то отобразить галерею Н */
+
+.our-rooms__gallery .gallery-showcase-image img { width: 100%; }
+
+.our-rooms__gallery .gallery-images { /* Позиционирование превью у галереи внутри блока */
+  margin-top: -45px;
+  margin-left: 7px;
+}
+
+.our-rooms__gallery .gallery-images img { outline: 1px solid white; }  /* Обводка у превью */
+.our-rooms__gallery .switcher-img { padding: 15px; }
+
+.switcher-text h5 {
+  margin-top: 15px;
+
+  font-size: 1em;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+
+.switcher-text p { 
+  margin: 0; 
+
+  font-size: .95em;
+  color: #888;
+}
+
+.switcher-text p strong { color: #333; }
+
+#body .our-rooms__gallery h4 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  margin: 0;
+
+  text-align: left;
+}
+
+.text-9-5-0-1.module-text { margin-bottom: -153px; }
+
+/**
+* Отзывы
+*/
+.testimonials {}
+
+.testimonials .person-company {
+  font-size: .9em;
+  color: #ccc;
+}
+
+#body .testimonials .fa { padding: .2em; }
+
+/**
+* Новости
+*/
+#body .related-posts .post-title,
+#body .builder-posts-wrap .post-title {
+  margin: 0 0 1em;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: normal;
+  font-weight: normal;
+  text-align: left;
+  letter-spacing: -.025em;
+}
+
+article .post-date { color: #999; }
+
+article .post-content { 
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  text-align: left; 
+}
+
+.loops-wrapper p:first-child { display: none; }
+.loops-wrapper p:nth-child(2) { margin-bottom: 0; }
+
+.loops-wrapper article {	
+  background-color: #fff;
+
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.loops-wrapper figure { margin-top: -1px; }
+
+.loops-wrapper article:hover {	
+  margin-top: 3px;
+  box-shadow: 0 20px 50px rgba(0,0,0, .2);
+}
+
+/**
+* Контакты
+*/
+.contact-block {}
+
+.contact-block h2 { margin-bottom: 100px; }
+.contact-block h3 { margin-top: 5px; }
+.contact-block p:last-of-type { margin-bottom: -11px; }
+
+/**
+* Футер
+*/
+#footerwrap {
+  padding: 0;
+
+  background-color: #333;
+}
+
+#footer .back-top {
+  top: -36px;
+  right: 0;
+  left: inherit;
+}
+
+#footer .footer-block { background-color: #333; }
+.footer-block a { color: #999; }
+.footer-block a:hover { color: #bbb; }
+
+.footer-block p { 
+  margin-bottom: 0; 
+  margin-top: 5px;
+} 
+
+.footer-block h2 { 
+  margin-bottom: 0px; 
+
+  line-height: .5em; 
+  font-weight: normal;
+} 
+
+.footer-block h2 a { 
+  color: #fff; 
+  text-decoration: none;
+}
+
+#menu-verhnye-menyu {
+  margin: 0;
+  background-color: inherit;
+  border-color: #333;
+}
+
+#menu-verhnye-menyu a { color: #999; }
+
+#menu-verhnye-menyu a:hover { 
+  color: #bbb; 
+  text-decoration: underline;
+}
+
+#menu-verhnye-menyu li:hover { background-color: transparent; }
+#footer .footer-text { padding: 0; }
+
