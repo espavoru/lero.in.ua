@@ -740,3 +740,23 @@ body .booked-form .required-asterisk {
 
 .booked-calendar-fields .field:nth-last-of-type(1) { float: right; }
 .booked-calendar-fields .field:nth-last-of-type(2) { float: left; }
+
+/**
+* Booked Agent Cabinet
+*/
+
+#booked-page-form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.login-submit,
+[name="wp-submit"] { 
+  width: 100%; 
+  padding-top: 30px;
+}
+
+body #booked-profile-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
