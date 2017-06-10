@@ -714,6 +714,25 @@ body .booked-form .required-asterisk {
   margin-right: 0;
 }
 
+#body .timeslot-time { display: none; }
+
+
+#body .timeslot-people {
+  float: none;
+  display: block;
+  
+  width: 60%;
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+#body .new-appt.button { 
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
 .booked-calendar-fields .field:nth-last-of-type(-n+2) {
   width: 47.5%;
   margin-bottom: 30px;
