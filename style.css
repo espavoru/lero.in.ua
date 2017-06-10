@@ -675,3 +675,49 @@ article .post-content {
 .contact-form [type="submit"] { background-color: #84a017; }
 .contact-form [type="submit"]:hover { background-color: #6e8614; }
 .contact-page__info { padding-top: 30px; }
+
+/**
+* Бронювання
+*/
+.booked { text-align: center; }
+
+.booked h2 {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/*.booked-form.booked-scrollable { max-height: none !important; }*/
+
+body table.booked-calendar td.today .date span { border-color: #cc9c5c; }
+
+body .booked-modal p.booked-title-bar,
+body table.booked-calendar td:hover .date span { background-color: #e0cb70;}
+
+.booked-form .field-small-p,
+.booked-form .appointment-info,
+#newAppointmentForm > p:first-of-type { display: none; }
+
+body .booked-form .field label.field-label { font-weight: normal; }
+
+body .booked-form .required-asterisk {
+  font-size: .7em;
+  opacity: .7;
+}
+
+.booked-form input { max-width: inherit; }
+
+.booked-form .button.cancel,
+.booked-form input[type="submit"] { width: 47.5%; }
+
+.booked-form .button.cancel {
+  float: right;
+  margin-right: 0;
+}
+
+.booked-calendar-fields .field:nth-last-of-type(-n+2) {
+  width: 47.5%;
+  margin-bottom: 30px;
+}
+
+.booked-calendar-fields .field:nth-last-of-type(1) { float: right; }
+.booked-calendar-fields .field:nth-last-of-type(2) { float: left; }

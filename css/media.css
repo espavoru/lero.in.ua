@@ -68,6 +68,22 @@
   
   #body .module-slider.themify_builder_slider_vertical .carousel-prev,
   #body .module-slider.themify_builder_slider_vertical .carousel-next { margin: 0; }
+  
+  body .booked-modal { margin: 5px; }
+  body .booked-modal .bm-window .booked-scrollable { padding: 10px; }
+  
+  #body .timeslot-time,
+  #body .button-timeslot { display: none; }
+  
+  #body .button-text { display: block; }
+  
+  #body .timeslot-people { 
+    width: 100%; 
+    padding-right: 0;
+  }
+  
+  #body .timeslot-people button { width: 100%; }
+  
 }
 
 /* Small Devices, Phones */
@@ -134,6 +150,11 @@
   
   .footer-block h2 a {
     display: block;
+    margin-bottom: 30px;
+  }
+  
+  .booked .module h2 {
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 }
